@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Page - Food Order System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🍴 Food Order System</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="food.html">Food</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">My Cart</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <h2>Admin Dashboard</h2>
+
+    <h3>Welcome Admin 👨‍💼</h3>
+
+    <div class="admin-menu">
+
+        <button onclick="viewOrders()">
+            View Orders
+        </button>
+
+        <button onclick="viewUsers()">
+            View Users
+        </button>
+
+        <button onclick="viewFood()">
+            Manage Food
+        </button>
+
+    </div>
+
+    <div id="adminContent"></div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

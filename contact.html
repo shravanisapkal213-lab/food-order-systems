@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <h2>Contact Us</h2>
+
+    <p>We are happy to help you!</p>
+
+    <form id="contactForm">
+
+        <label>Name</label><br>
+        <input type="text" id="contactName" placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Email</label><br>
+        <input type="email" id="contactEmail" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Message</label><br>
+        <textarea id="message" placeholder="Enter your message" rows="5" required></textarea>
+        <br><br>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <br>
+
+    <a href="index.html">Back to Home</a>
+
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const success = document.getElementById("successMessage");
+
+    success.innerHTML = "✓ Message Sent Successfully!";
+    success.style.display = "block";
+
+    document.getElementById("contactForm").reset();
+});
+</script>
+
+</body>
+</html>
